@@ -1,0 +1,18 @@
+get  http://localhost:3000/cars
+
+###
+
+post http://localhost:3000/cars
+Content-Type: application/json
+
+{
+"carVin":"2C3BBAJT187900395",
+"carMake":"Mercedes",
+"carModel":"Peter",
+"modelYear":2024,
+"carColor":"Silver",
+"ip_address":"43.203.252.125"
+}
+
+###
+
