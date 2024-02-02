@@ -31,7 +31,9 @@ router.get('/', function(req, res, next) {
 
 router.post("/", (req, res) => {
   let newCar = req.body;
+  req.app.locals.db.collection("cars").insertOne(req.body)
   console.log("new car", newCar);
+  //res.json({"status": "ok"});
   res.json(newCar); 
 });
 
